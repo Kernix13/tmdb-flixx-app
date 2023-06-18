@@ -13,7 +13,7 @@ const global = {
   },
   // NOTE: you should store your key and make requests from a server!
   api: {
-    apiKey: 'TMDB_API_KEY',
+    apiKey: TMDB_API_KEY,
     apiUrl: 'https://api.themoviedb.org/3/'
   }
 };
