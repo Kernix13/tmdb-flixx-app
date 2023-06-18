@@ -1,30 +1,29 @@
 # TMDB Flixx App
 
-> DON'T
-> PUSH
-> YOUR
-> `API_KEY` - see line 24 below
-
 Overview:
 
-- https://developers.themoviedb.org/3/getting-started/introduction
-- https://developers.themoviedb.org/3/configuration/get-api-configuration
+- The Movie Database API
 - No request rate limiting for this API
-- lots of endpoints and options
+- Lots of endpoints and options
 - Swiper library for slider in header
 - Fontawesome for icons
 - Google fonts
 - Pagination
 - Search functionality
-- Spinner from: https://codepen.io/tbrownvisuals/pen/edGYvx
 - Current link highlight, search alert, ...
+
+## Setup
+
+There are no packages so just open `index.html`.
 
 ## Files
 
-1. `.env`: attempting to use dotenv to hide my API key but I don't know how to use it - think I need to create a server with Node and maybe Express.
+I am going to try adding an environment variable on Netlify to hide my _FREE_ API key.
+
+<!-- 1. `.env`: attempting to use dotenv to hide my API key but I don't know how to use it - think I need to create a server with Node and maybe Express.
    1. API_KEY in the object `api`: {`apiKey`} in `script.js` line 21, `search.js` line16, and `fetchAPIData.js` line 27
 2. `.env.example`: in support of above
-3. `.gitignore` and `README.md`: standard files
+3. `.gitignore` and `README.md`: standard files -->
 
 ### Root HTML Files
 
@@ -37,7 +36,7 @@ Movie related:
 Search and People:
 
 4. `people.html`: details for the cast and crew members
-5. `search.html`: search results page
+5. `search.html`: search results page for the search forms on `index` and `shows`
 
 Show related:
 
@@ -61,7 +60,7 @@ Show related:
 1. `pagination.js`: single brief Fx for the `prev` and `next` buttons
 2. `successMsg.js`: single brief Fx for the search results messages
 
-> THESE ARE A PROBLEM BECAUSE THE ID'S ARE NOT UNIQUE BUT CHANGING THEM TO CLASSES MESSES UP THE STYLING - line 12 crewLoop.js
+> _THESE ARE A PROBLEM BECAUSE THE ID'S ARE NOT UNIQUE BUT CHANGING THEM TO CLASSES MESSES UP THE STYLING - line 12 `crewLoop.js`_
 
 ### Files in `components` folder
 
@@ -99,12 +98,12 @@ CAST & CREW PAGE:
 
 ## "Big" files in detail
 
-### 1 movie-show-details
+### 1) movie-show-details
 
 1. The variables `movieArr` znd `tvArr` are only for the component `createTopDetailsDiv` - I should create an object instead maybe
 2. The largest block of code involves the list items at the bottom. Can I reduce that, or should I create a separate component?
 
-### 2 cast-crew
+### 2) cast-crew
 
 - Most of the code is to split out the departments for the Crew members
 
@@ -118,6 +117,6 @@ CAST & CREW PAGE:
 
 ### Miscellaneous
 
-> _Here is a link to a guy who took the course but changed it and put it on his portfolio: https://showplex.netlify.app/_
+> _Here is a link to a guy who took the course but changed it (React SPA) and put it on his portfolio: https://showplex.netlify.app/_
 
 I deleted .`env.example` since I am going to try to deploy to Netlify and create an environment variable on there to hide my API key: `API_KEY=YOUR_API_KEY_HERE`
