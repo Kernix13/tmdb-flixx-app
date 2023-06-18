@@ -1,5 +1,10 @@
 # TMDB Flixx App
 
+> DON'T
+> PUSH
+> YOUR
+> `API_KEY` - see line 24 below
+
 Overview:
 
 - https://developers.themoviedb.org/3/getting-started/introduction
@@ -111,4 +116,8 @@ CAST & CREW PAGE:
 
 - This needs to be cleaned up since I added classes and Ids as I added new features - it's a mess!
 
+### Miscellaneous
+
 > _Here is a link to a guy who took the course but changed it and put it on his portfolio: https://showplex.netlify.app/_
+
+I deleted .`env.example` since I am going to try to deploy to Netlify and create an environment variable on there to hide my API key: `API_KEY=YOUR_API_KEY_HERE`
