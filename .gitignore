@@ -1,5 +1,10 @@
 .env
-notes.md
 node_modules
-netlify.toml
-functions/
+
+# Local Netlify folder
+functions/node_modules
+.netlify
+
+# Personal files
+netlify.md
+notes.md

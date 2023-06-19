@@ -18,10 +18,10 @@ There are no packages so just open `index.html`.
 
 ## Files
 
-I am going to try adding an environment variable on Netlify to hide my _FREE_ API key.
+I am going to try adding an environment variable on Netlify to hide my API key.
 
 <!-- 1. `.env`: attempting to use dotenv to hide my API key but I don't know how to use it - think I need to create a server with Node and maybe Express.
-   1. API_KEY in the object `api`: {`apiKey`} in `script.js` line 21, `search.js` line16, and `fetchAPIData.js` line 27
+   1. API_KEY in the object `api`: {`apiKey`} `search.js` line16 and `fetchAPIData.js` line 27
 2. `.env.example`: in support of above
 3. `.gitignore` and `README.md`: standard files -->
 

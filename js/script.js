@@ -8,6 +8,7 @@ import search from "./search.js";
 import getMovieCredits from "./cast-crew.js"
 import personDetails from "./people.js";
 
+// I removed the 'api' property since it is not used in this file
 const global = {
   currentPage: window.location.pathname,
   search: {
@@ -15,11 +16,6 @@ const global = {
     type: '',
     page: 1,
     totalPages: 1
-  },
-  // NOTE: you should store your key and make requests from a server!
-  api: {
-    apiKey: TMDB_API_KEY,
-    apiUrl: 'https://api.themoviedb.org/3/'
   }
 };
 
