@@ -16,20 +16,9 @@ Overview:
 
 There are no packages so just open `index.html`.
 
-## Files
+## Root HTML Files
 
 <!-- process.env.TMDB_API_KEY -->
-
-### Root HTML Files
-
-1. `fetchAPIData.js`: fetch Fx used for in 7 files:
-   1. cast-crew.js
-   2. movie-show-details.js
-   3. movie-show.js
-   4. people.js
-   5. components/displaySlider.js
-   6. components/getTitle.js
-   7. components/getVideos.js
 
 Movie related:
 
@@ -39,34 +28,33 @@ Movie related:
 
 Search and People:
 
-4. `people.html`: details for the cast and crew members
+4. `people.html`: details page for the cast and crew members
 5. `search.html`: search results page for the search forms on `index` and `shows`
 
 Show related:
 
 6. `shows.html`: default page for top rated shows
 7. `tv-cast-crew.html`: cards for the cast and crew of the show
-8. `tv-details.html`: details for a movie you click on
+8. `tv-details.html`: details for a show you click on
 
-### Root JS files in the js folder
+### JS Files in the root of the `js` folder
 
 1. `movie-show.js`: _MOVIE & SHOW_: top 20 results
 2. `movie-show-details.js`: _MOVIE & SHOW_: details page
-   1. fetch error for `getVideos()` if `language !== 'en'` in `fetchAPIData()`
+   1. Fetch error for `getVideos()` if `language !== 'en'` in `fetchAPIData()`
 3. `cast-crew.js`: _CAST & CREW_: cards
 4. `people.js`: _CAST & CREW_: details page
 5. `initSwiper.js`: single Fx for the swiper
 6. **`script.js`**: main file
 7. `search.js`: search form for main Movie and TV Show pages
+8. `fetchAPIData.js`: fetch Fx used for in 7 files: cast-crew.js, movie-show-details.js, movie-show.js, people.js, components/displaySlider.js, components/getTitle.js, components/getVideos.js
 
-### JS Files in `search` folder
+### JS Files in `js/search` folder
 
 1. `pagination.js`: single brief Fx for the `prev` and `next` buttons
 2. `successMsg.js`: single brief Fx for the search results messages
 
-> _THESE ARE A PROBLEM BECAUSE THE ID'S ARE NOT UNIQUE BUT CHANGING THEM TO CLASSES MESSES UP THE STYLING - line 12 `crewLoop.js`_
-
-### Files in `components` folder
+### JS Files in `js/components` folder
 
 1. `spinner.js`: show and hide spinner functions
 
@@ -88,11 +76,11 @@ MOVIE & SHOW DETAILS PAGES:
 6. `getVideos.js`: Get YouTube videos for movie/show - wrong for shows now
 7. `productionCos.js`: output production companies for **details** pages
 
-> `getExternalLinks.js`: Get social links for movie/show - the links for Shows are bad now, and are all set to `undefined` if languages does not include "en" - THIS IS NOW IN `movie-show-details.js`
+> _`getExternalLinks.js`: Get social links for movie/show - the links for Shows are bad now, and are all set to `undefined` if languages does not include `"en"` - THIS IS NOW IN `movie-show-details.js`_
 
 CAST & CREW PAGE:
 
-> Breaking up the crew by department was a nightmare and has led to some problems with my JS code and CSS
+> _Breaking up the crew by department was a nightmare and has led to some problems with my JS code and CSS_
 
 1. `castLoop.js`: output the full and limited profile cards for the _CAST_
 2. `crewLoop.js`: output the full and limited profile cards for the _CREW_
@@ -116,10 +104,10 @@ CAST & CREW PAGE:
 
 ### 4 css/style
 
-- This needs to be cleaned up since I added classes and Ids as I added new features - it's a mess!
+- This needs to be cleaned up since I added classes and Ids as I added new features - _it's a mess_!
 
 ### Miscellaneous
 
-> _Here is a link to a guy who took the course but changed it (React SPA) and put it on his portfolio: https://showplex.netlify.app/_
-
 I deleted .`env.example` since I am going to try to deploy to Netlify and create an environment variable on there to hide my API key: `API_KEY=YOUR_API_KEY_HERE`
+
+<!-- > _Here is a link to a guy who took the course but changed it (React SPA) and put it on his portfolio: https://showplex.netlify.app/_ -->
