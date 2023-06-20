@@ -18,14 +18,18 @@ There are no packages so just open `index.html`.
 
 ## Files
 
-I am going to try adding an environment variable on Netlify to hide my API key.
-
-<!-- 1. `.env`: attempting to use dotenv to hide my API key but I don't know how to use it - think I need to create a server with Node and maybe Express.
-   1. API_KEY in the object `api`: {`apiKey`} `search.js` line16 and `fetchAPIData.js` line 27
-2. `.env.example`: in support of above
-3. `.gitignore` and `README.md`: standard files -->
+<!-- process.env.TMDB_API_KEY -->
 
 ### Root HTML Files
+
+1. `fetchAPIData.js`: fetch Fx used for in 7 files:
+   1. cast-crew.js
+   2. movie-show-details.js
+   3. movie-show.js
+   4. people.js
+   5. components/displaySlider.js
+   6. components/getTitle.js
+   7. components/getVideos.js
 
 Movie related:
 
@@ -64,8 +68,7 @@ Show related:
 
 ### Files in `components` folder
 
-1. `fetchAPIData.js`: fetch Fx used for all pages
-2. `spinner.js`: show and hide spinner functions
+1. `spinner.js`: show and hide spinner functions
 
 MOVIE, SHOW & SEARCH PAGES:
 

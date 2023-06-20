@@ -1,4 +1,4 @@
-import fetchAPIData from "./fetchAPIData.js";
+import fetchAPIData from "../fetchAPIData.js";
 
 // Get additional videos for movie: /movie/{movie_id}/videos
 async function getVideos(str) {

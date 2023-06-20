@@ -1,4 +1,4 @@
-import { showSpinner, hideSpinner } from "./spinner.js"
+import { showSpinner, hideSpinner } from "./components/spinner.js"
 
 // Fetch data
 async function fetchAPIData(endpoint) {

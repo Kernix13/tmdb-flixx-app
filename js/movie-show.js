@@ -1,4 +1,4 @@
-import fetchAPIData from "./components/fetchAPIData.js";
+import fetchAPIData from "./fetchAPIData.js";
 import createCardElements from "./components/createCard.js";
 
 // Display 20 most popular videos for main movies and shows page 

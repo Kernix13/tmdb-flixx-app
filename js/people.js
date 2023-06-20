@@ -1,4 +1,4 @@
-import fetchAPIData from "./components/fetchAPIData.js";
+import fetchAPIData from "./fetchAPIData.js";
 import createDetailsImg from "./components/createImg.js";
 
 const personHeading = document.getElementById("person-name")

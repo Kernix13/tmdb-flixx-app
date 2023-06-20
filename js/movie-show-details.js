@@ -1,17 +1,15 @@
-import fetchAPIData from "./components/fetchAPIData.js";
-
-// WHY CAN SOME IMPORTS NOT WORK WHEN YOU ADD default AND REMOVE {}?
-import displayBackgroundImage from "./components/createBgImg.js";
-import createDetailsImg from "./components/createImg.js";
+import fetchAPIData from "./fetchAPIData.js";
 
 // imports for details pages
+import displayBackgroundImage from "./components/createBgImg.js";
+import createDetailsImg from "./components/createImg.js";
 import createTopDetailsDiv from "./components/createTopDiv.js";
 import createBottomDetails from "./components/createBottomDetails.js";
 import bottomListItems from "./components/bottomList.js";
 import prodCompanies from "./components/productionCos.js";
-import createCastLink from "./components/createCastLink.js";
 import createSocialLinks from "./components/createSocialLinks.js";
 import getVideos from "./components/getVideos.js";
+import createCastLink from "./components/createCastLink.js";
 
 const topDetailsDiv = document.createElement("div");
 topDetailsDiv.className = "top-info";

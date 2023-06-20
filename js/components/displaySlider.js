@@ -1,4 +1,4 @@
-import fetchAPIData from "./fetchAPIData.js";
+import fetchAPIData from "../fetchAPIData.js";
 import initSwiper from "../initSwiper.js";
 
 // Slider/Swiper functionality for "/" and "/index.html"

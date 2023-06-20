@@ -1,4 +1,4 @@
-import fetchAPIData from "./components/fetchAPIData.js";
+import fetchAPIData from "./fetchAPIData.js";
 import weakProfile from "./components/weak-profiles.js";
 import getTitle from "./components/getTitle.js";
 import castLoop from "./components/castLoop.js";

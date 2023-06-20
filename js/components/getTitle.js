@@ -1,4 +1,4 @@
-import fetchAPIData from "./fetchAPIData.js";
+import fetchAPIData from "../fetchAPIData.js";
 
 async function getTitle(vidType, vidId, elem) {
   const results = await fetchAPIData(`/${vidType}/${vidId}`);
