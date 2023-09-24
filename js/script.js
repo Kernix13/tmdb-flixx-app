@@ -37,7 +37,7 @@ function init() {
       displayPopular();
       displaySlider();
       break;
-    case '/shows.html':
+    case '/shows':
       displayPopular();
       break;
     case '/tv-details.html':
