@@ -8,7 +8,8 @@ async function displayPopular() {
   
   if (type === '/shows.html') {
     console.log('show')
-    const { results } = await fetchAPIData('tv/top_rated');
+    const { results } = await fetchAPIData('tv/popular');
+    console.log('tv/popular')
     createCardElements("popular-shows", results, {
       type: "tv",
       title: "name",

@@ -57,7 +57,7 @@ function displaySearchResults(results) {
   searchHeading.className ="search-results";
 
   if (global.search.type === "movie" && results.length > 0) {
-    console.log(global.search.type)
+
     createSuccessMsg(results, searchHeading, global.search.totalResults, global.search.term)
 
     createCardElements("search-results", results, {
@@ -71,7 +71,7 @@ function displaySearchResults(results) {
     global.search.totalResults > 20 ? displayPagination() : null;
 
   } else if (global.search.type === "tv" && results.length > 0) {
-    console.log(global.search.type)
+
     createSuccessMsg(results, searchHeading, global.search.totalResults, global.search.term)
 
     createCardElements("search-results", results, {
