@@ -110,4 +110,6 @@ CAST & CREW PAGE:
 
 I deleted .`env.example` since I am going to try to deploy to Netlify and create an environment variable on there to hide my API key: `API_KEY=YOUR_API_KEY_HERE`
 
+I need to pull in the `people` endpoint into `cast-crew.js` so that I can use `!imdb_id` is outputting the cast and crew. Having no profile_path is not enough, because some of those people have ZERO content on their profile page.
+
 <!-- > _Here is a link to a guy who took the course but changed it (React SPA) and put it on his portfolio: https://showplex.netlify.app/_ -->

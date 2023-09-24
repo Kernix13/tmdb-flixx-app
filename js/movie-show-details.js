@@ -30,9 +30,11 @@ export default async function displayDetails() {
   if (type === 'tv' && results.languages.includes('en')) {
     getExternalLinks(topDetailsDiv, type);
     getVideos(typeTitle);
+    console.log('show')
   } else {
     getExternalLinks(topDetailsDiv, type);
     getVideos(typeTitle);
+    console.log('movie')
   }
 
   // Overlay for background image

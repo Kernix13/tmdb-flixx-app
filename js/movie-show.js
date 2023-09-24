@@ -7,6 +7,7 @@ async function displayPopular() {
   const type = window.location.pathname;
   
   if (type === '/shows.html') {
+    console.log('show')
     const { results } = await fetchAPIData('tv/top_rated');
     createCardElements("popular-shows", results, {
       type: "tv",

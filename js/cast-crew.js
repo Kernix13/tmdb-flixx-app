@@ -76,7 +76,7 @@ async function getMovieCredits() {
   crewDepartments.sort();
   const sortedResults = results.crew.sort((a, b) => (a.department > b.department) ? 1 : -1);
 
-  /* ====== cREATE Objects for full and limited crew profiles ====== */
+  /* ====== Create Objects for full and limited crew profiles ====== */
   const crewDeptObj = {};
   const crewDeptObjNoPic = {};
 
@@ -122,7 +122,7 @@ async function getMovieCredits() {
     p.append(document.createTextNode("No crew members found."))
     crewTitle.prepend(p)
   }
-  // Output paragraph for tthe number of crew members
+  // Output paragraph for the number of crew members
   if (results.crew.length >= 1 && !results.crew[0].profile_path) {
     const crewTitle = document.getElementById("full-crew")
     const p = document.createElement("p")
