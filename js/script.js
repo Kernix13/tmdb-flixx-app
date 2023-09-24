@@ -31,31 +31,24 @@ function highlightActiveLink() {
 
 // init app
 function init() {
-  switch(global.currentPage) {
-    case '/':
-    case '/index.html':
-      displayPopular();
-      displaySlider();
-      break;
-    case '/shows':
-      displayPopular();
-      break;
-    case '/tv-details.html':
-    case '/movie-details.html':
-      displayDetails();
-      break;
-    case '/tv-cast-crew.html':
-    case '/movie-cast-crew.html':
-      getMovieCredits();
-      break;
-    case '/people-details.html':
-      personDetails();
-      break;
-    case '/search.html':
-      search();
-      break;
+  const page = global.currentPage;
+
+  if (['/', '/index.html'].includes(page)) {
+    displayPopular();
+    displaySlider();
+  } else if (page.includes('shows')) {
+    displayPopular();
+  } else if (page.includes('details')) {
+    displayDetails();
+  } else if (page.includes('cast-crew')) {
+    getMovieCredits();
+  } else if (page.includes('people-details')) {
+    personDetails();
+  } else if (page.includes('search')) {
+    search();
   }
-  highlightActiveLink()
+
+  highlightActiveLink();
 }
 
 document.addEventListener('DOMContentLoaded', init);
