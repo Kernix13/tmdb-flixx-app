@@ -10,6 +10,7 @@ async function displayPopular() {
     console.log('show')
     const { results } = await fetchAPIData('tv/popular');
     console.log('tv/popular')
+    console.log(results)
     createCardElements("popular-shows", results, {
       type: "tv",
       title: "name",
